@@ -1,0 +1,5 @@
+/* 왼쪽에 점 없애기, 들여쓰기 */
+ul {
+  list-style: none;
+  padding-left: 10px;
+}
