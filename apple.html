@@ -6,27 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>coding apple practice</title>
     <link rel="stylesheet" href="apple.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="alert-box" id="Box">
-      <p>Alert Box</p>
-      <button id="closeBtn">X</button>
-    </div>
-
-    <button onclick="Alert('아이디를 입력해주세요','block')">버튼1</button>
-    <button onclick="Alert('비밀번호를 입력해주세요','block')">버튼2</button>
+    <h4 id="test">안녕하세요</h4>
 
     <script>
-      document
-        .getElementById("closeBtn")
-        .addEventListener("click", function () {
-          document.getElementById("Box").style.display = "none";
-        });
-
-      let Alert = function (text, style) {
-        document.getElementsByTagName("p")[0].innerText = text;
-        document.getElementById("Box").style.display = style;
-      };
+      $("#test").addClass("testClass");
     </script>
 
     <script
