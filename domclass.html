@@ -7,8 +7,8 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>JAVASCRIPT DOM 강의입니다!</h1>
-    <p>여기서 우리는 여러가지 테스트를 해 볼거에요!!</p>
+    <h1 id="headerText">JAVASCRIPT DOM 강의입니다!</h1>
+    <p class="subText">여기서 우리는 여러가지 테스트를 해 볼거에요!!</p>
 
     <ul>
       <li>첫 번째 아이템</li>
@@ -16,6 +16,18 @@
       <li>세 번째 아이템</li>
     </ul>
 
-    <script></script>
+    <button onclick="buttonClickEvent()">클릭하면 heading이 바뀌어요!</button>
+
+    <script>
+      // 1. 버튼 만들어
+      // 2. 버튼 눌렀을 때
+      // 3. h1태그를 불러와
+      // 4. h1태그의 내용을 바꿔
+
+      let buttonClickEvent = function () {
+        let h1Tag = document.querySelector("h1");
+        h1Tag.innerText = "성공";
+      };
+    </script>
   </body>
 </html>
